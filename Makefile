@@ -1,15 +1,10 @@
-CXX = g++
-CXXFLAGS = -Wall -Werror -g
-
-OBJS = main.o loop.o input.o
-
-all: $(OBJS) lib.h
-	$(CXX) $(CXXFLAGS) $(OBJS) -o cookiemonster
+all: *.cpp *.h
+	g++ -Wall -o cookiemonster *.cpp
 
 test: testThreeTimes
 
 testThreeTimes: all
-	cat testThreeTimes.input | ./cookiemonster
+	./testThreeTimes.sh
 
 clean: 
 	-rm -f cookiemonster $(OBJS)
