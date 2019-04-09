@@ -1,0 +1,5 @@
+*.o
+cookiemonster
+*.*.swp
+*.*.swo
+a.out
