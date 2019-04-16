@@ -7,6 +7,6 @@ testThreeTimes: all
 	./cookiemonster < testThreeTimes.input
 
 clean: 
-	-rm -f cookiemonster cookiemonster *.o
+	rm cookiemonster
 
 
