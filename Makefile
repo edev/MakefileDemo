@@ -4,7 +4,7 @@ all: *.cpp *.h
 test: testThreeTimes
 
 testThreeTimes: all
-	./testThreeTimes.sh
+	./cookiemonster < testThreeTimes.input
 
 clean: 
 	-rm -f cookiemonster $(OBJS)
